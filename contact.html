@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Foundation | Welcome</title>
+	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link rel="stylesheet" href="css\foundation.css"> </head>
+
+<body>
+	<div class="split left"> <img class="image" style="max-width: 65%; height: auto; padding: 5rem;" src="assets\Logo.png" alt="Midwestern.">
+		<div class="centered" style="text-align: left;">
+			<div class="row" style="color: white; padding-top: 3rem;">
+				<h1><u>Heading</u> One</h1>
+				<p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin finibus rutrum. Nullam gravida turpis eu mauris elementum finibus. Nullam eget est pulvinar, consequat erat vitae, cursus sem. </p>
+			</div>
+		</div>
+	</div>
+	<div class="split right"> <span class="contact" style="padding: 5rem;"><a href="home.html">home</a></span>
+		<div>
+			<form class="contact-us-form centered">
+            <div class="row" style="padding-top: 3rem;">
+               <div class="columns small-12">
+                  <h2 style="color: black; text-align: left; padding-bottom: 1rem;">Heading Two</h2> </div>                  
+               </div>
+				<div class="row">
+					<div class="columns small-6">
+						<input class="textBox" style="color: #F5F5F5;" type="text" placeholder="First Name" required> </div>
+					<div class="columns small-6">
+						<input class="textBox" type="text" placeholder="Last Name" required> </div>
+					<div class="columns small-6">
+						<input class="textBox" type="text" placeholder="Title"> </div>
+					<div class="columns small-6">
+						<input class="textBox" type="text" placeholder="Email" required> </div>
+				</div>
+				<div class="row">
+					<div class="columns small-12">
+						<textarea class="messageBox" placeholder="Message" required></textarea> <a class="button button-squeeze center" href="#">Submit</a> </div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer> </footer>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+	<script>
+	document.getElementById("jsLink").addEventListener("click", myFunction);
+	// Flag for "now processing" or "already clicked".
+	var clicked = false;
+
+	function myFunction() {
+		// Will only start if clicked is false
+		if(!clicked) {
+			// Set clicked to true
+			clicked = true;
+			const object1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm", ];
+			if(window.console) console.log(object1);
+			const object2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles", ];
+			if(window.console) console.log(object2);
+			const object3 = object1.concat(object2)
+			let resultObject = [...new Set(object3)];
+			if(window.console) console.log(resultObject);
+			alert("Something is done!");
+			// Re-enable after processing if you want
+			// clicked = false;
+		} else {
+			alert("Operation already completed.");
+		}
+	}
+	</script>
+</body>
+
+</html>

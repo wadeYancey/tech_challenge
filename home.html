@@ -1,0 +1,103 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Foundation | Welcome</title>
+      <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+      <link rel="stylesheet" href="css\foundation.css">
+   </head>
+   <body>
+      <!-- Navigation -->
+      <!-- /Navigation -->
+      <br>
+      <div class="row" style="padding-bottom: 3rem;">
+         <div class="column">
+            <img class="image" style="max-width: 65%; height: auto;" src="assets\Logo.png" alt="Midwestern.">
+            <span class="contact"> <a href="contact.html">contact</a></span>
+         </div>
+      </div>
+      <div class="row small-up-1 medium-up-2 large-up-3" style="padding: 1rem;">
+         <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="test-eq">
+            <div class="cell medium-4">
+               <div class="callout large" data-equalizer-watch>
+                  <img src= "assets\Talkie.png" class="center">
+                  <h2>Heading Two</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id pretium quam, at condimentum ligula.</p>
+                  <a class="button button-squeeze center" href="#">Learn More</a>
+               </div>
+            </div>
+            <div class="cell medium-4">
+               <div class="callout large" data-equalizer-watch>
+                  <img src= "assets\Rabbit.png" class="center" style="padding-top: 2rem; padding-bottom: 1rem;">
+                  <h2>Heading Two</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id pretium quam, at condimentum ligula.</p>
+                  <a class="button button-squeeze center" href="#">Learn More</a>
+               </div>
+            </div>
+            <div class="cell medium-4">
+               <div class="callout large" data-equalizer-watch>
+                  <img src= "assets\Shield.png" class="center" style="padding-bottom: 1rem;">
+                  <h2>Heading Two</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id pretium quam, at condimentum ligula.</p>
+                  <a class="button button-squeeze center" href="#">Learn More</a>
+               </div>
+            </div>
+         </div>
+         <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="test-eq">
+            <div class="cell" style="color: white; padding-top: 3rem;">
+               <h1><u>Heading</u> One</h1>
+               <p style="color: white;">Remove the duplicates in 2 Javascript objects and output the list of distinct names in an unordered list when <a id="jsLink">this link</a> is clicked. If the operation has been completed already notify the user that this has already been done.</p>
+            </div>
+         </div>
+      </div>
+      <footer>
+      </footer>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+      <script>
+         $(document).foundation();
+      </script>
+      
+
+      <script>  
+
+        document.getElementById("jsLink").addEventListener("click", myFunction);
+
+        // Flag for "now processing" or "already clicked".
+        var clicked = false;
+ 
+        function myFunction() {
+        // Will only start if clicked is false
+        
+        if (!clicked) {
+        // Set clicked to true
+        clicked = true;
+
+        const object1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm",];
+          if (window.console) console.log(object1);
+          const object2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles",];
+          if (window.console) console.log(object2);
+          const object3 = object1.concat(object2)
+          let resultObject = [...new Set(object3)];
+          if (window.console) console.log(resultObject);          
+        
+        alert("Something is done!");
+ 
+        // Re-enable after processing if you want
+        // clicked = false;
+          }
+        
+        else {
+          alert("Operation already completed.");
+        }
+
+        }
+
+      </script>
+
+   </body>
+</html>
+
